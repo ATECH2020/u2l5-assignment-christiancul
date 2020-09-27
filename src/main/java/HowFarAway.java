@@ -9,16 +9,16 @@ public class HowFarAway
         startLat = startLong = endLat = endLong = 0;
 
         System.out.print("Enter the latitude of the starting location: ");
-        startLat = userIn.nextFloat();
+        startLat = userIn.nextDouble();
 
         System.out.print("Enter the longitude of the starting location: ");
-        startLong = userIn.nextFloat();
+        startLong = userIn.nextDouble();
 
         System.out.print("Enter the latitude of the ending location: ");
-        endLat = userIn.nextFloat();
+        endLat = userIn.nextDouble();
 
         System.out.print("Enter the longitude of the ending location: ");
-        endLong = userIn.nextFloat();
+        endLong = userIn.nextDouble();
         
         GeoLocation startLocation = new GeoLocation(startLat, startLong);
         GeoLocation endLocation = new GeoLocation(endLat, endLong);
