@@ -8,6 +8,7 @@ public class HowFarAway
         double startLat, startLong, endLat, endLong;
         startLat = startLong = endLat = endLong = 0;
 
+        //prompt user
         System.out.print("Enter the latitude of the starting location: ");
         startLat = userIn.nextDouble();
 
@@ -20,10 +21,11 @@ public class HowFarAway
         System.out.print("Enter the longitude of the ending location: ");
         endLong = userIn.nextDouble();
         
+        //create GeoLocation objects
         GeoLocation startLocation = new GeoLocation(startLat, startLong);
         GeoLocation endLocation = new GeoLocation(endLat, endLong);
 
-        //System.out.printf("The distance is %f miles.", startLocation.distanceFrom(endLocation));
+        //display distance from the two locations
         System.out.print("The distance is " + startLocation.distanceFrom(endLocation) + " miles.");
 
         userIn.close();

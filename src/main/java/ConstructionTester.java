@@ -21,11 +21,14 @@ public class ConstructionTester
         System.out.printf("How many windows do you need? \n");
         windowAmt = userIn.nextInt();
 
+        //create Construction
         Construction myC = new Construction(lumberCost, windowCost, taxRate);
         
+        //calc cost
         total = (myC.lumberCost(boardAmt) + myC.windowCost(windowAmt));
         grandTotal = myC.grandTotal(total);
-        
+
+        //display results
         System.out.println("Total: " + total);
         System.out.printf("Grand Total: %.1f\n", grandTotal);
         
